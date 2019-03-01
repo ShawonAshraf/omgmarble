@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03BC4CD62229BA1900BF4CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CD52229BA1900BF4CAE /* AppDelegate.swift */; };
+		03BC4CD82229BA1900BF4CAE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03BC4CD72229BA1900BF4CAE /* GameScene.sks */; };
+		03BC4CDA2229BA1900BF4CAE /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03BC4CD92229BA1900BF4CAE /* Actions.sks */; };
+		03BC4CDC2229BA1900BF4CAE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CDB2229BA1900BF4CAE /* GameScene.swift */; };
+		03BC4CDE2229BA1900BF4CAE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CDD2229BA1900BF4CAE /* GameViewController.swift */; };
+		03BC4CE12229BA1900BF4CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BC4CDF2229BA1900BF4CAE /* Main.storyboard */; };
+		03BC4CE32229BA1B00BF4CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BC4CE22229BA1B00BF4CAE /* Assets.xcassets */; };
+		03BC4CE62229BA1B00BF4CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BC4CE42229BA1B00BF4CAE /* LaunchScreen.storyboard */; };
+		03BC4CF12229BA1B00BF4CAE /* OMGMarblesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CF02229BA1B00BF4CAE /* OMGMarblesTests.swift */; };
+		03BC4CFC2229BA1B00BF4CAE /* OMGMarblesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CFB2229BA1B00BF4CAE /* OMGMarblesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03BC4CED2229BA1B00BF4CAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03BC4CCA2229BA1900BF4CAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03BC4CD12229BA1900BF4CAE;
+			remoteInfo = OMGMarbles;
+		};
+		03BC4CF82229BA1B00BF4CAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03BC4CCA2229BA1900BF4CAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03BC4CD12229BA1900BF4CAE;
+			remoteInfo = OMGMarbles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03BC4CD22229BA1900BF4CAE /* OMGMarbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMGMarbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03BC4CD52229BA1900BF4CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03BC4CD72229BA1900BF4CAE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		03BC4CD92229BA1900BF4CAE /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		03BC4CDB2229BA1900BF4CAE /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		03BC4CDD2229BA1900BF4CAE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		03BC4CE02229BA1900BF4CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03BC4CE22229BA1B00BF4CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03BC4CE52229BA1B00BF4CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03BC4CE72229BA1B00BF4CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BC4CEC2229BA1B00BF4CAE /* OMGMarblesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMGMarblesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03BC4CF02229BA1B00BF4CAE /* OMGMarblesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMGMarblesTests.swift; sourceTree = "<group>"; };
+		03BC4CF22229BA1B00BF4CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BC4CF72229BA1B00BF4CAE /* OMGMarblesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMGMarblesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03BC4CFB2229BA1B00BF4CAE /* OMGMarblesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMGMarblesUITests.swift; sourceTree = "<group>"; };
+		03BC4CFD2229BA1B00BF4CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03BC4CCF2229BA1900BF4CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BC4CE92229BA1B00BF4CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BC4CF42229BA1B00BF4CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03BC4CC92229BA1900BF4CAE = {
+			isa = PBXGroup;
+			children = (
+				03BC4CD42229BA1900BF4CAE /* OMGMarbles */,
+				03BC4CEF2229BA1B00BF4CAE /* OMGMarblesTests */,
+				03BC4CFA2229BA1B00BF4CAE /* OMGMarblesUITests */,
+				03BC4CD32229BA1900BF4CAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03BC4CD32229BA1900BF4CAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03BC4CD22229BA1900BF4CAE /* OMGMarbles.app */,
+				03BC4CEC2229BA1B00BF4CAE /* OMGMarblesTests.xctest */,
+				03BC4CF72229BA1B00BF4CAE /* OMGMarblesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03BC4CD42229BA1900BF4CAE /* OMGMarbles */ = {
+			isa = PBXGroup;
+			children = (
+				03BC4CD52229BA1900BF4CAE /* AppDelegate.swift */,
+				03BC4CD72229BA1900BF4CAE /* GameScene.sks */,
+				03BC4CD92229BA1900BF4CAE /* Actions.sks */,
+				03BC4CDB2229BA1900BF4CAE /* GameScene.swift */,
+				03BC4CDD2229BA1900BF4CAE /* GameViewController.swift */,
+				03BC4CDF2229BA1900BF4CAE /* Main.storyboard */,
+				03BC4CE22229BA1B00BF4CAE /* Assets.xcassets */,
+				03BC4CE42229BA1B00BF4CAE /* LaunchScreen.storyboard */,
+				03BC4CE72229BA1B00BF4CAE /* Info.plist */,
+			);
+			path = OMGMarbles;
+			sourceTree = "<group>";
+		};
+		03BC4CEF2229BA1B00BF4CAE /* OMGMarblesTests */ = {
+			isa = PBXGroup;
+			children = (
+				03BC4CF02229BA1B00BF4CAE /* OMGMarblesTests.swift */,
+				03BC4CF22229BA1B00BF4CAE /* Info.plist */,
+			);
+			path = OMGMarblesTests;
+			sourceTree = "<group>";
+		};
+		03BC4CFA2229BA1B00BF4CAE /* OMGMarblesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03BC4CFB2229BA1B00BF4CAE /* OMGMarblesUITests.swift */,
+				03BC4CFD2229BA1B00BF4CAE /* Info.plist */,
+			);
+			path = OMGMarblesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03BC4CD12229BA1900BF4CAE /* OMGMarbles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03BC4D002229BA1B00BF4CAE /* Build configuration list for PBXNativeTarget "OMGMarbles" */;
+			buildPhases = (
+				03BC4CCE2229BA1900BF4CAE /* Sources */,
+				03BC4CCF2229BA1900BF4CAE /* Frameworks */,
+				03BC4CD02229BA1900BF4CAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OMGMarbles;
+			productName = OMGMarbles;
+			productReference = 03BC4CD22229BA1900BF4CAE /* OMGMarbles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03BC4CEB2229BA1B00BF4CAE /* OMGMarblesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03BC4D032229BA1B00BF4CAE /* Build configuration list for PBXNativeTarget "OMGMarblesTests" */;
+			buildPhases = (
+				03BC4CE82229BA1B00BF4CAE /* Sources */,
+				03BC4CE92229BA1B00BF4CAE /* Frameworks */,
+				03BC4CEA2229BA1B00BF4CAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03BC4CEE2229BA1B00BF4CAE /* PBXTargetDependency */,
+			);
+			name = OMGMarblesTests;
+			productName = OMGMarblesTests;
+			productReference = 03BC4CEC2229BA1B00BF4CAE /* OMGMarblesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03BC4CF62229BA1B00BF4CAE /* OMGMarblesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03BC4D062229BA1B00BF4CAE /* Build configuration list for PBXNativeTarget "OMGMarblesUITests" */;
+			buildPhases = (
+				03BC4CF32229BA1B00BF4CAE /* Sources */,
+				03BC4CF42229BA1B00BF4CAE /* Frameworks */,
+				03BC4CF52229BA1B00BF4CAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03BC4CF92229BA1B00BF4CAE /* PBXTargetDependency */,
+			);
+			name = OMGMarblesUITests;
+			productName = OMGMarblesUITests;
+			productReference = 03BC4CF72229BA1B00BF4CAE /* OMGMarblesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03BC4CCA2229BA1900BF4CAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Shawon Ashraf";
+				TargetAttributes = {
+					03BC4CD12229BA1900BF4CAE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					03BC4CEB2229BA1B00BF4CAE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 03BC4CD12229BA1900BF4CAE;
+					};
+					03BC4CF62229BA1B00BF4CAE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 03BC4CD12229BA1900BF4CAE;
+					};
+				};
+			};
+			buildConfigurationList = 03BC4CCD2229BA1900BF4CAE /* Build configuration list for PBXProject "OMGMarbles" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03BC4CC92229BA1900BF4CAE;
+			productRefGroup = 03BC4CD32229BA1900BF4CAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03BC4CD12229BA1900BF4CAE /* OMGMarbles */,
+				03BC4CEB2229BA1B00BF4CAE /* OMGMarblesTests */,
+				03BC4CF62229BA1B00BF4CAE /* OMGMarblesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03BC4CD02229BA1900BF4CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BC4CE12229BA1900BF4CAE /* Main.storyboard in Resources */,
+				03BC4CD82229BA1900BF4CAE /* GameScene.sks in Resources */,
+				03BC4CE32229BA1B00BF4CAE /* Assets.xcassets in Resources */,
+				03BC4CE62229BA1B00BF4CAE /* LaunchScreen.storyboard in Resources */,
+				03BC4CDA2229BA1900BF4CAE /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BC4CEA2229BA1B00BF4CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BC4CF52229BA1B00BF4CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03BC4CCE2229BA1900BF4CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BC4CDC2229BA1900BF4CAE /* GameScene.swift in Sources */,
+				03BC4CDE2229BA1900BF4CAE /* GameViewController.swift in Sources */,
+				03BC4CD62229BA1900BF4CAE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BC4CE82229BA1B00BF4CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BC4CF12229BA1B00BF4CAE /* OMGMarblesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BC4CF32229BA1B00BF4CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BC4CFC2229BA1B00BF4CAE /* OMGMarblesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03BC4CEE2229BA1B00BF4CAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03BC4CD12229BA1900BF4CAE /* OMGMarbles */;
+			targetProxy = 03BC4CED2229BA1B00BF4CAE /* PBXContainerItemProxy */;
+		};
+		03BC4CF92229BA1B00BF4CAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03BC4CD12229BA1900BF4CAE /* OMGMarbles */;
+			targetProxy = 03BC4CF82229BA1B00BF4CAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03BC4CDF2229BA1900BF4CAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03BC4CE02229BA1900BF4CAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03BC4CE42229BA1B00BF4CAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03BC4CE52229BA1B00BF4CAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03BC4CFE2229BA1B00BF4CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03BC4CFF2229BA1B00BF4CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03BC4D012229BA1B00BF4CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF3Y7UU4D6;
+				INFOPLIST_FILE = OMGMarbles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawon.OMGMarbles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		03BC4D022229BA1B00BF4CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF3Y7UU4D6;
+				INFOPLIST_FILE = OMGMarbles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawon.OMGMarbles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		03BC4D042229BA1B00BF4CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF3Y7UU4D6;
+				INFOPLIST_FILE = OMGMarblesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawon.OMGMarblesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OMGMarbles.app/OMGMarbles";
+			};
+			name = Debug;
+		};
+		03BC4D052229BA1B00BF4CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF3Y7UU4D6;
+				INFOPLIST_FILE = OMGMarblesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawon.OMGMarblesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OMGMarbles.app/OMGMarbles";
+			};
+			name = Release;
+		};
+		03BC4D072229BA1B00BF4CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF3Y7UU4D6;
+				INFOPLIST_FILE = OMGMarblesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawon.OMGMarblesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OMGMarbles;
+			};
+			name = Debug;
+		};
+		03BC4D082229BA1B00BF4CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF3Y7UU4D6;
+				INFOPLIST_FILE = OMGMarblesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawon.OMGMarblesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OMGMarbles;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03BC4CCD2229BA1900BF4CAE /* Build configuration list for PBXProject "OMGMarbles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BC4CFE2229BA1B00BF4CAE /* Debug */,
+				03BC4CFF2229BA1B00BF4CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03BC4D002229BA1B00BF4CAE /* Build configuration list for PBXNativeTarget "OMGMarbles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BC4D012229BA1B00BF4CAE /* Debug */,
+				03BC4D022229BA1B00BF4CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03BC4D032229BA1B00BF4CAE /* Build configuration list for PBXNativeTarget "OMGMarblesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BC4D042229BA1B00BF4CAE /* Debug */,
+				03BC4D052229BA1B00BF4CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03BC4D062229BA1B00BF4CAE /* Build configuration list for PBXNativeTarget "OMGMarblesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BC4D072229BA1B00BF4CAE /* Debug */,
+				03BC4D082229BA1B00BF4CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03BC4CCA2229BA1900BF4CAE /* Project object */;
+}
