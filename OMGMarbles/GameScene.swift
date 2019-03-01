@@ -29,6 +29,9 @@ class GameScene: SKScene {
         }
     }
     
+    // scorer
+    var scoreSet = ScoreSet()
+    
     override func didMove(to view: SKView) {
         let background = SKSpriteNode(imageNamed: "checkerboard")
         // set props
@@ -71,6 +74,25 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         updatePhysicsBody()
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        
+        guard let position = touches.first?.location(in: self) else { return }
+        guard let tappedBall = nodes(at: position).first(where: { $0 is Ball }) as? Ball else {
+            return
+        }
+        
+        // if matched, let scoreSet do the work
+        scoreSet.matchedBalls.removeAll(keepingCapacity: true)
+        scoreSet.getMatches(from: tappedBall)
+        
+        if scoreSet.matchedBalls.count >= 3 {
+            for ball in scoreSet.matchedBalls {
+                ball.removeFromParent()
+            }
+        }
     }
     
     
