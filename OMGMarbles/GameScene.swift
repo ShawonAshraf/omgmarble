@@ -16,7 +16,7 @@ class GameScene: SKScene {
     var motionManager: CMMotionManager?
     
     // score label
-    let scoreLabel = SKLabelNode(fontNamed: "AvenirNext")
+    let scoreLabel = SKLabelNode(fontNamed: "Avenir Next")
     
     // state
     
