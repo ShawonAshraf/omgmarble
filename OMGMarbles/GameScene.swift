@@ -15,6 +15,12 @@ class GameScene: SKScene {
     let balls = ["ballBlue", "ballGreen", "ballPurple", "ballRed", "ballYellow"]
     var motionManager: CMMotionManager?
     
+    // score label
+    let scoreLabel = SKLabelNode(fontNamed: "AvenirNext")
+    
+    // state
+    
+    
     override func didMove(to view: SKView) {
         let background = SKSpriteNode(imageNamed: "checkerboard")
         
@@ -25,6 +31,10 @@ class GameScene: SKScene {
         // put this behind everything so that it doesn't take over the balls
         background.zPosition = -1
         addChild(background)
+        
+        // set scorelabel props
+        setScoreLabelProps(scoreLabel: scoreLabel)
+        addChild(scoreLabel)
         
         let ball = SKSpriteNode(imageNamed: "ballBlue")
         let ballRadius = ball.frame.width / 2.0
@@ -75,5 +85,14 @@ class GameScene: SKScene {
             // x and y will swap place since device is set to be in landscape mode
             physicsWorld.gravity = CGVector(dx: accelerometerData.acceleration.y * -50, dy: accelerometerData.acceleration.x * 50)
         }
+    }
+    
+    // MARK: scorelabel props
+    func setScoreLabelProps(scoreLabel: SKLabelNode) {
+        scoreLabel.fontSize = 72
+        scoreLabel.position = CGPoint(x: 20, y: 20)
+        scoreLabel.text = "SCORE: 0"
+        scoreLabel.zPosition = 100
+        scoreLabel.horizontalAlignmentMode = .left
     }
 }
