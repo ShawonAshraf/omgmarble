@@ -8,13 +8,15 @@
 
 import SpriteKit
 import GameplayKit
+import CoreMotion
 
 class GameScene: SKScene {
     
-    var balls = ["ballBlue", "ballGreen", "ballPurple", "ballRed", "ballYellow"]
+    let balls = ["ballBlue", "ballGreen", "ballPurple", "ballRed", "ballYellow"]
+    var motionManager: CMMotionManager?
     
     override func didMove(to view: SKView) {
-        let background = SKSpriteNode(imageNamed: "chekerboard")
+        let background = SKSpriteNode(imageNamed: "checkerboard")
         
         // puts at the center of the screen
         background.position = CGPoint(x: frame.midX, y: frame.midY)
@@ -29,17 +31,49 @@ class GameScene: SKScene {
         
         // bounds for ball movement so that it stays inside the scene
         for i in stride(from: ballRadius, to: view.bounds.width - ballRadius, by: ball.frame.width) {
-            for j in stride(from: 100, to: view.bounds.height, by: ball.frame.height) {
+            for j in stride(from: 100, to: view.bounds.height - ballRadius, by: ball.frame.height) {
                 // get a random ball
                 let ballType = balls.randomElement()!
-                let ball = Ball(imageNamed: ballType)
-                ball.position = CGPoint(x: i, y: j)
-                ball.name = ballType
-                addChild(ball)
+                let newBall = Ball(imageNamed: ballType)
+                newBall.position = CGPoint(x: i, y: j)
+                newBall.name = ballType
+                
+                // set physics prop
+                setPhysicsProps(for: newBall, withRadius: ballRadius)
+                
+                // add the newly generated ball
+                addChild(newBall)
             }
         }
+        
+        // balls will fall but can't escape an area
+        physicsBody = SKPhysicsBody(edgeLoopFrom: frame.inset(by: UIEdgeInsets(top: 100, left: 0, bottom: 0, right: 0)))
+        
+        // set up motion manager
+        motionManager = CMMotionManager()
+        motionManager?.startAccelerometerUpdates()
+        
     }
     
-    override func sceneDidLoad() {
+    override func update(_ currentTime: TimeInterval) {
+        updatePhysicsBody()
+    }
+    
+    
+    // MARK: set physics properties for a randomly generated new ball
+    func setPhysicsProps(for ball: Ball, withRadius ballRadius: CGFloat) {
+        ball.physicsBody = SKPhysicsBody(circleOfRadius: ballRadius)
+        ball.physicsBody?.allowsRotation = false
+        ball.physicsBody?.restitution = 0
+        ball.physicsBody?.friction = 0
+    }
+    
+    // MARK: update physics body properties based on accelermoter data
+    func updatePhysicsBody() {
+        // update motion gravity on accelerometer data
+        if let accelerometerData = motionManager?.accelerometerData {
+            // x and y will swap place since device is set to be in landscape mode
+            physicsWorld.gravity = CGVector(dx: accelerometerData.acceleration.y * -50, dy: accelerometerData.acceleration.x * 50)
+        }
     }
 }
