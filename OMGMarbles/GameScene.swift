@@ -19,7 +19,15 @@ class GameScene: SKScene {
     let scoreLabel = SKLabelNode(fontNamed: "Avenir Next")
     
     // state
-    
+    var score = 0 {
+        didSet {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .decimal
+            
+            let formattedScore = formatter.string(from: score as NSNumber) ?? "0"
+            scoreLabel.text = "SCORE: \(formattedScore)"
+        }
+    }
     
     override func didMove(to view: SKView) {
         let background = SKSpriteNode(imageNamed: "checkerboard")
