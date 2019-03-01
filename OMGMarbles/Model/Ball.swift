@@ -8,6 +8,6 @@
 
 import SpriteKit
 
-class Ball : SKNode {
+class Ball : SKSpriteNode {
     
 }
