@@ -39,5 +39,18 @@ extension GameScene {
     func getMatchesBasedOnDistance(from startBall: Ball) {
         let matchWidth = pow(startBall.frame.width, 2) * 1.1
         
+        for node in children {
+            guard let ball = node as? Ball else { continue }
+            guard ball.name == startBall.name else { continue }
+            
+            let distance = distanceSquared(from: startBall, to: ball)
+            
+            guard distance < matchWidth else { continue }
+            
+            if !matchedBalls.contains(ball) {
+                matchedBalls.insert(ball)
+                getMatchesBasedOnDistance(from: ball)
+            }
+        }
     }
 }

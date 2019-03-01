@@ -6,6 +6,7 @@
 //  Copyright © 2019 Shawon Ashraf. All rights reserved.
 //
 
+import Foundation
 import SpriteKit
 import GameplayKit
 import CoreMotion
@@ -84,9 +85,11 @@ class GameScene: SKScene {
         
         // if matched, let scoreSet do the work
         matchedBalls.removeAll(keepingCapacity: true)
-        getMatches(from: tappedBall)
+        getMatchesBasedOnDistance(from: tappedBall)
         
         if matchedBalls.count >= 3 {
+            score += Int(pow(2, Double(min(matchedBalls.count, 16))))
+            
             for ball in matchedBalls {
                 ball.removeFromParent()
             }
