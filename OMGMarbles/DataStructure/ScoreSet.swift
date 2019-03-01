@@ -7,16 +7,11 @@
 //
 
 import Foundation
-import CoreMotion
 import SpriteKit
+import GameplayKit
+import CoreMotion
 
-class ScoreSet {
-    public var matchedBalls: Set<Ball>
-    
-    init() {
-        matchedBalls = Set<Ball>()
-    }
-    
+extension GameScene {
     // check if a given ball is in contact with a ball of the matching color
     // if not add it to the set, else pop it
     // rinse, repeat. it'll go on a recurtsion
@@ -30,5 +25,19 @@ class ScoreSet {
                 getMatches(from: ball)
             }
         }
+    }
+    
+    // based on distance
+    // because physics can get it wrong at times
+    func distanceSquared(from: Ball, to: Ball) -> CGFloat {
+        let dx = pow(from.position.x - to.position.x, 2)
+        let dy = pow(from.position.y - to.position.y, 2)
+        
+        return dx + dy
+    }
+    
+    func getMatchesBasedOnDistance(from startBall: Ball) {
+        let matchWidth = pow(startBall.frame.width, 2) * 1.1
+        
     }
 }

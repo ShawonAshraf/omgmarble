@@ -28,9 +28,7 @@ class GameScene: SKScene {
             scoreLabel.text = "SCORE: \(formattedScore)"
         }
     }
-    
-    // scorer
-    var scoreSet = ScoreSet()
+    var matchedBalls = Set<Ball>()
     
     override func didMove(to view: SKView) {
         let background = SKSpriteNode(imageNamed: "checkerboard")
@@ -85,11 +83,11 @@ class GameScene: SKScene {
         }
         
         // if matched, let scoreSet do the work
-        scoreSet.matchedBalls.removeAll(keepingCapacity: true)
-        scoreSet.getMatches(from: tappedBall)
+        matchedBalls.removeAll(keepingCapacity: true)
+        getMatches(from: tappedBall)
         
-        if scoreSet.matchedBalls.count >= 3 {
-            for ball in scoreSet.matchedBalls {
+        if matchedBalls.count >= 3 {
+            for ball in matchedBalls {
                 ball.removeFromParent()
             }
         }
