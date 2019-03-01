@@ -23,13 +23,9 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         let background = SKSpriteNode(imageNamed: "checkerboard")
+        // set props
+        setBackgroundProps(background: background)
         
-        // puts at the center of the screen
-        background.position = CGPoint(x: frame.midX, y: frame.midY)
-        // matches the color to the background
-        background.alpha = 0.2
-        // put this behind everything so that it doesn't take over the balls
-        background.zPosition = -1
         addChild(background)
         
         // set scorelabel props
@@ -67,6 +63,17 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         updatePhysicsBody()
+    }
+    
+    
+    // MARK: set background props
+    func setBackgroundProps(background: SKSpriteNode) {
+        // puts at the center of the screen
+        background.position = CGPoint(x: frame.midX, y: frame.midY)
+        // matches the color to the background
+        background.alpha = 0.2
+        // put this behind everything so that it doesn't take over the balls
+        background.zPosition = -1
     }
     
     
