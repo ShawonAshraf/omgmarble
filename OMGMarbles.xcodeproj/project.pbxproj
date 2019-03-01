@@ -17,7 +17,7 @@
 		03BC4CF12229BA1B00BF4CAE /* OMGMarblesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CF02229BA1B00BF4CAE /* OMGMarblesTests.swift */; };
 		03BC4CFC2229BA1B00BF4CAE /* OMGMarblesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CFB2229BA1B00BF4CAE /* OMGMarblesUITests.swift */; };
 		03BC4D0B2229BB6F00BF4CAE /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4D0A2229BB6F00BF4CAE /* Ball.swift */; };
-		03BC4D0E2229D94200BF4CAE /* ScoreSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4D0D2229D94200BF4CAE /* ScoreSet.swift */; };
+		03BC4D0E2229D94200BF4CAE /* Scorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4D0D2229D94200BF4CAE /* Scorer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		03BC4CFB2229BA1B00BF4CAE /* OMGMarblesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMGMarblesUITests.swift; sourceTree = "<group>"; };
 		03BC4CFD2229BA1B00BF4CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03BC4D0A2229BB6F00BF4CAE /* Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
-		03BC4D0D2229D94200BF4CAE /* ScoreSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreSet.swift; sourceTree = "<group>"; };
+		03BC4D0D2229D94200BF4CAE /* Scorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 		03BC4CD42229BA1900BF4CAE /* OMGMarbles */ = {
 			isa = PBXGroup;
 			children = (
-				03BC4D0C2229D92200BF4CAE /* DataStructure */,
+				03BC4D0C2229D92200BF4CAE /* Extensions */,
 				03BC4D092229BB5900BF4CAE /* Model */,
 				03BC4CD52229BA1900BF4CAE /* AppDelegate.swift */,
 				03BC4CD72229BA1900BF4CAE /* GameScene.sks */,
@@ -145,12 +145,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		03BC4D0C2229D92200BF4CAE /* DataStructure */ = {
+		03BC4D0C2229D92200BF4CAE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				03BC4D0D2229D94200BF4CAE /* ScoreSet.swift */,
+				03BC4D0D2229D94200BF4CAE /* Scorer.swift */,
 			);
-			path = DataStructure;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +288,7 @@
 				03BC4D0B2229BB6F00BF4CAE /* Ball.swift in Sources */,
 				03BC4CDC2229BA1900BF4CAE /* GameScene.swift in Sources */,
 				03BC4CDE2229BA1900BF4CAE /* GameViewController.swift in Sources */,
-				03BC4D0E2229D94200BF4CAE /* ScoreSet.swift in Sources */,
+				03BC4D0E2229D94200BF4CAE /* Scorer.swift in Sources */,
 				03BC4CD62229BA1900BF4CAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
