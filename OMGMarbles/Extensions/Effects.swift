@@ -17,5 +17,8 @@ extension GameScene {
         let shader = SKShader(fileNamed: "Background")
         shader.uniforms = uniforms
         background.shader = shader
+        
+        // repeat background rotation
+        background.run(SKAction.repeatForever(SKAction.rotate(byAngle: .pi, duration: 10)))
     }
 }

@@ -14,6 +14,7 @@ import CoreMotion
 class GameScene: SKScene {
     
     let balls = ["ballBlue", "ballGreen", "ballPurple", "ballRed", "ballYellow"]
+    let rippleScoreThreshold = 20000
     var motionManager: CMMotionManager?
     
     // score label
@@ -58,8 +59,14 @@ class GameScene: SKScene {
                 setPhysicsProps(for: newBall, withRadius: ballRadius)
                 
                 // add the newly generated ball
-//                 addChild(newBall)
+                 addChild(newBall)
             }
+        }
+        
+        // show ripple when score goes past threshold
+        
+        if score >= rippleScoreThreshold {
+            
         }
         
         // fragment shader
@@ -71,9 +78,6 @@ class GameScene: SKScene {
         
         // show ripple effect
         showRippleEffect(on: background, with: uniforms)
-        
-        // repeat background rotation
-        background.run(SKAction.repeatForever(SKAction.rotate(byAngle: .pi, duration: 10)))
         
         // balls will fall but can't escape an area
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame.inset(by: UIEdgeInsets(top: 100, left: 0, bottom: 0, right: 0)))
