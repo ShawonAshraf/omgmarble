@@ -58,7 +58,9 @@ class GameScene: SKScene {
         
         // don't show ripple effect if flag is set to false
         if rippleEffectOn {
-            showRippleEffect(on: background)
+            // game is over
+            // show ripple effect
+            // show alert, then reset the scene
         }
     }
     

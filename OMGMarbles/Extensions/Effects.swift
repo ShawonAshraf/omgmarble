@@ -13,7 +13,7 @@ import CoreMotion
 
 extension GameScene {
     // show the ripple effect
-    func showRippleEffect(on background: SKSpriteNode) {
+    func showRippleEffect() {
         let shader = SKShader(fileNamed: "Background")
         shader.uniforms = uniforms
         background.shader = shader

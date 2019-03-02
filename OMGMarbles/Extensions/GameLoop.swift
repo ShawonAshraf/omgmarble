@@ -13,7 +13,18 @@ import CoreMotion
 
 extension GameScene {
     func resetScene() {
-        
+        let children = self.children
+        for child in children {
+            child.removeAllActions()
+            child.removeAllChildren()
+            child.removeFromParent()
+        }
+    }
+    
+    func resetState() {
+        // reset state
+        score = 0
+        rippleEffectOn = false
     }
     
     func setupScene(for view: SKView) {
