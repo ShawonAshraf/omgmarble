@@ -10,11 +10,15 @@ import Foundation
 import SpriteKit
 import GameplayKit
 import CoreMotion
+import UIKit
 
 class GameScene: SKScene {
     
+    // viewController
+    var viewController: UIViewController!
+    
     let balls = ["ballBlue", "ballGreen", "ballPurple", "ballRed", "ballYellow"]
-    let MIN_REMAINING_BALLS = 80
+    let MIN_REMAINING_BALLS = 300
     var motionManager: CMMotionManager?
     
     // score label
@@ -53,15 +57,6 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         updatePhysicsBody()
-        // checkFlag
-        setRippleFlag()
-        
-        // don't show ripple effect if flag is set to false
-        if rippleEffectOn {
-            // game is over
-            // show ripple effect
-            // show alert, then reset the scene
-        }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -89,6 +84,20 @@ class GameScene: SKScene {
             if matchedBalls.count >= 5 {
                 showOmgPopUp()
             }
+        }
+        
+        // set flag
+        setRippleFlag()
+        
+        // don't show ripple effect if flag is set to false
+        if rippleEffectOn {
+            // game is over
+            // show ripple effect
+            // BUG: Ripple effect doesn't stop
+//           showRippleEffect()
+            
+            // show alert, then reset the scene from alert
+            showAlert()
         }
     }
 }

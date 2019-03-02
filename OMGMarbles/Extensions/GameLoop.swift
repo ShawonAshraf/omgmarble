@@ -15,10 +15,10 @@ extension GameScene {
     func resetScene() {
         let children = self.children
         for child in children {
-            child.removeAllActions()
             child.removeAllChildren()
             child.removeFromParent()
         }
+//        stopRippleEffect()
     }
     
     func resetState() {
@@ -63,6 +63,5 @@ extension GameScene {
         // set up motion manager
         motionManager = CMMotionManager()
         motionManager?.startAccelerometerUpdates()
-        
     }
 }

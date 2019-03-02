@@ -19,7 +19,18 @@ extension GameScene {
         background.shader = shader
         
         // repeat background rotation
-        background.run(SKAction.repeatForever(SKAction.rotate(byAngle: .pi, duration: 10)))
+        let ripple = SKAction.repeatForever(SKAction.rotate(byAngle: .pi, duration: 10))
+        background.run(ripple, withKey: "ripple")
+    }
+    
+    // stopRippleEffect
+    func stopRippleEffect() {
+        if let ripple = background.action(forKey: "ripple") {
+            ripple.speed = 0
+        } else {
+            print("Error")
+        } 
+        background.removeAction(forKey: "ripple")
     }
     
     // set flag
