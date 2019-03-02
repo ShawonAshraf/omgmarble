@@ -84,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0369CCB3222A57000095C68E /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				03BC4CD72229BA1900BF4CAE /* GameScene.sks */,
+			);
+			path = Sprites;
+			sourceTree = "<group>";
+		};
 		03BC4CC92229BA1900BF4CAE = {
 			isa = PBXGroup;
 			children = (
@@ -107,10 +115,10 @@
 		03BC4CD42229BA1900BF4CAE /* OMGMarbles */ = {
 			isa = PBXGroup;
 			children = (
+				0369CCB3222A57000095C68E /* Sprites */,
 				03BC4D0C2229D92200BF4CAE /* Extensions */,
 				03BC4D092229BB5900BF4CAE /* Model */,
 				03BC4CD52229BA1900BF4CAE /* AppDelegate.swift */,
-				03BC4CD72229BA1900BF4CAE /* GameScene.sks */,
 				03BC4CDB2229BA1900BF4CAE /* GameScene.swift */,
 				03BC4CDD2229BA1900BF4CAE /* GameViewController.swift */,
 				03BC4CDF2229BA1900BF4CAE /* Main.storyboard */,
