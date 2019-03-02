@@ -14,7 +14,7 @@ import CoreMotion
 class GameScene: SKScene {
     
     let balls = ["ballBlue", "ballGreen", "ballPurple", "ballRed", "ballYellow"]
-    let rippleScoreThreshold = 20000
+    let MIN_REMAINING_BALLS = 80
     var motionManager: CMMotionManager?
     
     // score label
@@ -30,10 +30,25 @@ class GameScene: SKScene {
             scoreLabel.text = "SCORE: \(formattedScore)"
         }
     }
+    
+    // ripple effect flag
+    var rippleEffectOn = false
+    var isFinished = false
+    
+    // set to contain macthed balls
     var matchedBalls = Set<Ball>()
     
+    // fragment shader
+    let uniforms: [SKUniform] = [
+        SKUniform(name: "u_speed", float: 1),
+        SKUniform(name: "u_strength", float: 3),
+        SKUniform(name: "u_frequency", float: 20)
+    ]
+    
+    // bakground texture
+    let background = SKSpriteNode(imageNamed: "checkerboard")
+    
     override func didMove(to view: SKView) {
-        let background = SKSpriteNode(imageNamed: "checkerboard")
         // set props
         setBackgroundProps(background: background)
         
@@ -62,22 +77,6 @@ class GameScene: SKScene {
                  addChild(newBall)
             }
         }
-        
-        // show ripple when score goes past threshold
-        
-        if score >= rippleScoreThreshold {
-            
-        }
-        
-        // fragment shader
-        let uniforms: [SKUniform] = [
-            SKUniform(name: "u_speed", float: 1),
-            SKUniform(name: "u_strength", float: 3),
-            SKUniform(name: "u_frequency", float: 20)
-        ]
-        
-        // show ripple effect
-        showRippleEffect(on: background, with: uniforms)
         
         // balls will fall but can't escape an area
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame.inset(by: UIEdgeInsets(top: 100, left: 0, bottom: 0, right: 0)))
@@ -117,6 +116,14 @@ class GameScene: SKScene {
             if matchedBalls.count >= 5 {
                 showOmgPopUp()
             }
+        }
+        
+        // checkFlag
+        setRippleFlag()
+        
+        // don't show ripple effect if flag is set to false
+        if rippleEffectOn {
+            showRippleEffect(on: background)
         }
     }
 }
