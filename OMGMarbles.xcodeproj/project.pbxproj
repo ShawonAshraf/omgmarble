@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0369CCB6222A577A0095C68E /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0369CCB4222A577A0095C68E /* Explosion.sks */; };
+		0369CCB7222A577A0095C68E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0369CCB5222A577A0095C68E /* Assets.xcassets */; };
 		03BC4CD62229BA1900BF4CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CD52229BA1900BF4CAE /* AppDelegate.swift */; };
 		03BC4CD82229BA1900BF4CAE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03BC4CD72229BA1900BF4CAE /* GameScene.sks */; };
 		03BC4CDC2229BA1900BF4CAE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CDB2229BA1900BF4CAE /* GameScene.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0369CCB4222A577A0095C68E /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		0369CCB5222A577A0095C68E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03BC4CD22229BA1900BF4CAE /* OMGMarbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMGMarbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BC4CD52229BA1900BF4CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03BC4CD72229BA1900BF4CAE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				03BC4CD72229BA1900BF4CAE /* GameScene.sks */,
+				0369CCB4222A577A0095C68E /* Explosion.sks */,
+				0369CCB5222A577A0095C68E /* Assets.xcassets */,
 			);
 			path = Sprites;
 			sourceTree = "<group>";
@@ -270,7 +276,9 @@
 			files = (
 				03BC4CE12229BA1900BF4CAE /* Main.storyboard in Resources */,
 				03BC4CD82229BA1900BF4CAE /* GameScene.sks in Resources */,
+				0369CCB6222A577A0095C68E /* Explosion.sks in Resources */,
 				03BC4CE32229BA1B00BF4CAE /* Assets.xcassets in Resources */,
+				0369CCB7222A577A0095C68E /* Assets.xcassets in Resources */,
 				03BC4CE62229BA1B00BF4CAE /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
