@@ -5,6 +5,7 @@ void main() {
     float strength = u_strength / 100.0;
     
     vec2 coord = v_tex_coord;
+    
     coord.x += sin((coord.x + speed) * u_frequency) * strength;
     coord.y += cos((coord.y + speed) * u_frequency) * strength;
     

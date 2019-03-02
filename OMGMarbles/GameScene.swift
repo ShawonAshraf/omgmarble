@@ -58,9 +58,23 @@ class GameScene: SKScene {
                 setPhysicsProps(for: newBall, withRadius: ballRadius)
                 
                 // add the newly generated ball
-                addChild(newBall)
+//                 addChild(newBall)
             }
         }
+        
+        // fragment shader
+        let uniforms: [SKUniform] = [
+            SKUniform(name: "u_speed", float: 1),
+            SKUniform(name: "u_strength", float: 3),
+            SKUniform(name: "u_frequency", float: 20)
+        ]
+        
+        let shader = SKShader(fileNamed: "Background")
+        shader.uniforms = uniforms
+        background.shader = shader
+        
+        // repeat background rotation
+        background.run(SKAction.repeatForever(SKAction.rotate(byAngle: .pi, duration: 10)))
         
         // balls will fall but can't escape an area
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame.inset(by: UIEdgeInsets(top: 100, left: 0, bottom: 0, right: 0)))
