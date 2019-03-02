@@ -13,6 +13,8 @@
 		0387893C222A7B7D00A16F31 /* Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0387893B222A7B7D00A16F31 /* Effects.swift */; };
 		0387893E222A8A5C00A16F31 /* GameLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0387893D222A8A5C00A16F31 /* GameLoop.swift */; };
 		03878940222A8CD400A16F31 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0387893F222A8CD400A16F31 /* Alert.swift */; };
+		0387E350222AAD7600473F23 /* IMG_1974.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0387E34E222AAD7500473F23 /* IMG_1974.PNG */; };
+		0387E351222AAD7600473F23 /* IMG_1972.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0387E34F222AAD7600473F23 /* IMG_1972.PNG */; };
 		03BC4CD62229BA1900BF4CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CD52229BA1900BF4CAE /* AppDelegate.swift */; };
 		03BC4CD82229BA1900BF4CAE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03BC4CD72229BA1900BF4CAE /* GameScene.sks */; };
 		03BC4CDC2229BA1900BF4CAE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CDB2229BA1900BF4CAE /* GameScene.swift */; };
@@ -51,6 +53,9 @@
 		0387893B222A7B7D00A16F31 /* Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effects.swift; sourceTree = "<group>"; };
 		0387893D222A8A5C00A16F31 /* GameLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLoop.swift; sourceTree = "<group>"; };
 		0387893F222A8CD400A16F31 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		0387E34C222AABEA00473F23 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0387E34E222AAD7500473F23 /* IMG_1974.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1974.PNG; sourceTree = "<group>"; };
+		0387E34F222AAD7600473F23 /* IMG_1972.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1972.PNG; sourceTree = "<group>"; };
 		03BC4CD22229BA1900BF4CAE /* OMGMarbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMGMarbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BC4CD52229BA1900BF4CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03BC4CD72229BA1900BF4CAE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -114,9 +119,20 @@
 			path = Shaders;
 			sourceTree = "<group>";
 		};
+		0387E34D222AAD5B00473F23 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				0387E34F222AAD7600473F23 /* IMG_1972.PNG */,
+				0387E34E222AAD7500473F23 /* IMG_1974.PNG */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		03BC4CC92229BA1900BF4CAE = {
 			isa = PBXGroup;
 			children = (
+				0387E34D222AAD5B00473F23 /* Screenshots */,
+				0387E34C222AABEA00473F23 /* README.md */,
 				03BC4CD42229BA1900BF4CAE /* OMGMarbles */,
 				03BC4CEF2229BA1B00BF4CAE /* OMGMarblesTests */,
 				03BC4CFA2229BA1B00BF4CAE /* OMGMarblesUITests */,
@@ -294,6 +310,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0387E350222AAD7600473F23 /* IMG_1974.PNG in Resources */,
+				0387E351222AAD7600473F23 /* IMG_1972.PNG in Resources */,
 				03BC4CE12229BA1900BF4CAE /* Main.storyboard in Resources */,
 				03BC4CD82229BA1900BF4CAE /* GameScene.sks in Resources */,
 				0369CCB6222A577A0095C68E /* Explosion.sks in Resources */,

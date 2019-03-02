@@ -18,7 +18,7 @@ class GameScene: SKScene {
     var viewController: UIViewController!
     
     let balls = ["ballBlue", "ballGreen", "ballPurple", "ballRed", "ballYellow"]
-    let MIN_REMAINING_BALLS = 300
+    let MIN_REMAINING_BALLS = 80
     var motionManager: CMMotionManager?
     
     // score label
