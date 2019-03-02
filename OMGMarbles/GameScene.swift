@@ -69,9 +69,8 @@ class GameScene: SKScene {
             SKUniform(name: "u_frequency", float: 20)
         ]
         
-        let shader = SKShader(fileNamed: "Background")
-        shader.uniforms = uniforms
-        background.shader = shader
+        // show ripple effect
+        showRippleEffect(on: background, with: uniforms)
         
         // repeat background rotation
         background.run(SKAction.repeatForever(SKAction.rotate(byAngle: .pi, duration: 10)))
