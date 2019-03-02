@@ -12,6 +12,7 @@
 		0387893A222A6E7A00A16F31 /* Background.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 03878939222A6E7A00A16F31 /* Background.fsh */; };
 		0387893C222A7B7D00A16F31 /* Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0387893B222A7B7D00A16F31 /* Effects.swift */; };
 		0387893E222A8A5C00A16F31 /* GameLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0387893D222A8A5C00A16F31 /* GameLoop.swift */; };
+		03878940222A8CD400A16F31 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0387893F222A8CD400A16F31 /* Alert.swift */; };
 		03BC4CD62229BA1900BF4CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CD52229BA1900BF4CAE /* AppDelegate.swift */; };
 		03BC4CD82229BA1900BF4CAE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03BC4CD72229BA1900BF4CAE /* GameScene.sks */; };
 		03BC4CDC2229BA1900BF4CAE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CDB2229BA1900BF4CAE /* GameScene.swift */; };
@@ -49,6 +50,7 @@
 		03878939222A6E7A00A16F31 /* Background.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Background.fsh; sourceTree = "<group>"; };
 		0387893B222A7B7D00A16F31 /* Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effects.swift; sourceTree = "<group>"; };
 		0387893D222A8A5C00A16F31 /* GameLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLoop.swift; sourceTree = "<group>"; };
+		0387893F222A8CD400A16F31 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		03BC4CD22229BA1900BF4CAE /* OMGMarbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMGMarbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BC4CD52229BA1900BF4CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03BC4CD72229BA1900BF4CAE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				03BC4D0F2229E1EA00BF4CAE /* PropertySetters.swift */,
 				0387893B222A7B7D00A16F31 /* Effects.swift */,
 				0387893D222A8A5C00A16F31 /* GameLoop.swift */,
+				0387893F222A8CD400A16F31 /* Alert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03878940222A8CD400A16F31 /* Alert.swift in Sources */,
 				03BC4D0B2229BB6F00BF4CAE /* Ball.swift in Sources */,
 				0387893C222A7B7D00A16F31 /* Effects.swift in Sources */,
 				03BC4CDC2229BA1900BF4CAE /* GameScene.swift in Sources */,
