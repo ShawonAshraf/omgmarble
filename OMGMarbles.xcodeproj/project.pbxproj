@@ -11,6 +11,7 @@
 		0369CCB7222A577A0095C68E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0369CCB5222A577A0095C68E /* Assets.xcassets */; };
 		0387893A222A6E7A00A16F31 /* Background.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 03878939222A6E7A00A16F31 /* Background.fsh */; };
 		0387893C222A7B7D00A16F31 /* Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0387893B222A7B7D00A16F31 /* Effects.swift */; };
+		0387893E222A8A5C00A16F31 /* GameLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0387893D222A8A5C00A16F31 /* GameLoop.swift */; };
 		03BC4CD62229BA1900BF4CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CD52229BA1900BF4CAE /* AppDelegate.swift */; };
 		03BC4CD82229BA1900BF4CAE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03BC4CD72229BA1900BF4CAE /* GameScene.sks */; };
 		03BC4CDC2229BA1900BF4CAE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC4CDB2229BA1900BF4CAE /* GameScene.swift */; };
@@ -47,6 +48,7 @@
 		0369CCB5222A577A0095C68E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03878939222A6E7A00A16F31 /* Background.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Background.fsh; sourceTree = "<group>"; };
 		0387893B222A7B7D00A16F31 /* Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effects.swift; sourceTree = "<group>"; };
+		0387893D222A8A5C00A16F31 /* GameLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLoop.swift; sourceTree = "<group>"; };
 		03BC4CD22229BA1900BF4CAE /* OMGMarbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMGMarbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BC4CD52229BA1900BF4CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03BC4CD72229BA1900BF4CAE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				03BC4D0D2229D94200BF4CAE /* BallPhysics.swift */,
 				03BC4D0F2229E1EA00BF4CAE /* PropertySetters.swift */,
 				0387893B222A7B7D00A16F31 /* Effects.swift */,
+				0387893D222A8A5C00A16F31 /* GameLoop.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				03BC4CDC2229BA1900BF4CAE /* GameScene.swift in Sources */,
 				03BC4CDE2229BA1900BF4CAE /* GameViewController.swift in Sources */,
 				03BC4D102229E1EA00BF4CAE /* PropertySetters.swift in Sources */,
+				0387893E222A8A5C00A16F31 /* GameLoop.swift in Sources */,
 				03BC4D0E2229D94200BF4CAE /* BallPhysics.swift in Sources */,
 				03BC4CD62229BA1900BF4CAE /* AppDelegate.swift in Sources */,
 			);

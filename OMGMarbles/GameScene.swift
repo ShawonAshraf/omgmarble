@@ -33,7 +33,6 @@ class GameScene: SKScene {
     
     // ripple effect flag
     var rippleEffectOn = false
-    var isFinished = false
     
     // set to contain macthed balls
     var matchedBalls = Set<Ball>()
@@ -49,46 +48,18 @@ class GameScene: SKScene {
     let background = SKSpriteNode(imageNamed: "checkerboard")
     
     override func didMove(to view: SKView) {
-        // set props
-        setBackgroundProps(background: background)
-        
-        addChild(background)
-        
-        // set scorelabel props
-        setScoreLabelProps(scoreLabel: scoreLabel)
-        addChild(scoreLabel)
-        
-        let ball = SKSpriteNode(imageNamed: "ballBlue")
-        let ballRadius = ball.frame.width / 2.0
-        
-        // bounds for ball movement so that it stays inside the scene
-        for i in stride(from: ballRadius, to: view.bounds.width - ballRadius, by: ball.frame.width) {
-            for j in stride(from: 100, to: view.bounds.height - ballRadius, by: ball.frame.height) {
-                // get a random ball
-                let ballType = balls.randomElement()!
-                let newBall = Ball(imageNamed: ballType)
-                newBall.position = CGPoint(x: i, y: j)
-                newBall.name = ballType
-                
-                // set physics prop
-                setPhysicsProps(for: newBall, withRadius: ballRadius)
-                
-                // add the newly generated ball
-                 addChild(newBall)
-            }
-        }
-        
-        // balls will fall but can't escape an area
-        physicsBody = SKPhysicsBody(edgeLoopFrom: frame.inset(by: UIEdgeInsets(top: 100, left: 0, bottom: 0, right: 0)))
-        
-        // set up motion manager
-        motionManager = CMMotionManager()
-        motionManager?.startAccelerometerUpdates()
-        
+        setupScene(for: view)
     }
     
     override func update(_ currentTime: TimeInterval) {
         updatePhysicsBody()
+        // checkFlag
+        setRippleFlag()
+        
+        // don't show ripple effect if flag is set to false
+        if rippleEffectOn {
+            showRippleEffect(on: background)
+        }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -116,14 +87,6 @@ class GameScene: SKScene {
             if matchedBalls.count >= 5 {
                 showOmgPopUp()
             }
-        }
-        
-        // checkFlag
-        setRippleFlag()
-        
-        // don't show ripple effect if flag is set to false
-        if rippleEffectOn {
-            showRippleEffect(on: background)
         }
     }
 }
