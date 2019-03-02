@@ -91,19 +91,15 @@ class GameScene: SKScene {
             score += Int(pow(2, Double(min(matchedBalls.count, 16))))
             
             for ball in matchedBalls {
-                // pop the balls when matched
-                if let particles = SKEmitterNode(fileNamed: "Explosion") {
-                    particles.position = ball.position
-                    addChild(particles)
-                    
-                    // remove from scene
-                    let removeAfterDead = SKAction.sequence([SKAction.wait(forDuration: 3), SKAction.removeFromParent()])
-                    particles.run(removeAfterDead)
-                }
-                
+                // explsion and pop!
+                popExplosion(ball: ball)
                 ball.removeFromParent()
+            }
+            
+            // show a pop up
+            if matchedBalls.count >= 5 {
+                showOmgPopUp()
             }
         }
     }
-    
 }

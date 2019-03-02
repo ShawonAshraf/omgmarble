@@ -53,4 +53,33 @@ extension GameScene {
             }
         }
     }
+    
+    // display the OMG sprite
+    func showOmgPopUp() {
+        let omg = SKSpriteNode(imageNamed: "omg")
+        omg.position = CGPoint(x: frame.midX, y: frame.midY)
+        omg.zPosition = 100
+        omg.xScale = 0.001
+        omg.yScale = 0.001
+        
+        addChild(omg)
+        
+        let appear = SKAction.group([SKAction.scale(to: 1, duration: 0.25), SKAction.fadeIn(withDuration: 0.25)])
+        let disappear = SKAction.group([SKAction.scale(to: 2, duration: 0.25), SKAction.fadeOut(withDuration: 0.25)])
+        let sequence = SKAction.sequence([appear, SKAction.wait(forDuration: 0.25), disappear])
+        omg.run(sequence)
+    }
+    
+    // show pop explosion
+    func popExplosion(ball: SKNode) {
+        // pop the balls when matched
+        if let particles = SKEmitterNode(fileNamed: "Explosion") {
+            particles.position = ball.position
+            addChild(particles)
+            
+            // remove from scene
+            let removeAfterDead = SKAction.sequence([SKAction.wait(forDuration: 3), SKAction.removeFromParent()])
+            particles.run(removeAfterDead)
+        }
+    }
 }
