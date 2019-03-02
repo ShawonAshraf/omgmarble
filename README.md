@@ -23,9 +23,7 @@ score += Int( pow( 2, min( matchedBalls.count, 16 ) ) )
 ## Screenshots
 > Taken from an iPad Air 2
 
-![img](./Screenshots/IMG_1972.png)
+![Imgur](https://i.imgur.com/k7xbqNU.png)
 
 
-![img](./Screenshots/IMG_1972.png)
-
-
+![Imgur](https://i.imgur.com/0CoZbdJ.png)
